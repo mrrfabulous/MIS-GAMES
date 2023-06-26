@@ -19,12 +19,12 @@
 		<div class="nav-bar">	
 		<ul class="nav-list">
 			<a href="#"><li> Latest </li> </a>
-			<a href="#"><li> Most Played </li> </a>
-			<a href="#"><li> About </li> </a>
+			<a href="#most-played"><li> Most Played </li> </a>
+			<a href="#about"><li> About </li> </a>
 			<span class="material-icons md-36 md-light" id="close-btn">&#xe5cd;</span>			
   		</ul>
   		<button onclick="toggleMode(this)" class="material-symbols-outlined" id="mode"> light_mode </button>
-  		<button id="start"> Play</button>
+  		<button id="start"> <a href="tic-tac.html"> Play</a></button>
 		<button id="open-btn"> 
 			<span class="material-icons md-36 md-light">&#xE5D2;</span>			
 		</button>
@@ -34,37 +34,68 @@
 		<h1> MIS GAMES </h1>
 		<h3> play games for free</h3>
 		<p> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-		<button id="start"> Get Started</button>
+		<button id="start"> <a href="#most-played"> Get Started </a> </button>
 	</section>
 
-	<section>
+	<section id="most-played">
+		<h1> most played </h1>
+		<div class="container">
+			<div class="card">
+				<a href="tic-tac.html">
+				<img src="./images/bg1.jpg" alt="Tic-Tac">
+				<div>	Tic-Tac </div></a>
+			</div>
+			<div class="card">
+				<a href="tic-tac.html">
+				<img src="./images/quiz.jpg">
+				<div>	Quiz </div></a>
+			</div>
+			<div class="card">
+				<a href="tic-tac.html">
+				<img src="./images/snake 2.jpg">
+				<div>	Snake </div></a>
+			</div>
+			<div class="card">
+				<a href="tic-tac.html">
+				<img src="./images/number.jpg">
+				<div>	Guess the number </div></a>
+			</div>
+			<div class="card">
+				<a href="tic-tac.html">
+				<img src="./images/bg1.jpg">
+				<div>	box fighter </div></a>
+			</div>
+			<div class="card">
+				<a href="tic-tac.html">
+				<img src="./images/edu.jpg">
+				<div>	Random </div></a>
+			</div>
+		</div>
+	</section>
+
+	<section id="about">
 		
-		<div class="grid">
-			    <div class="cell" style="background: var(--color-s-600);"></div>
-			    <div class="cell" style="background: var(--color-s-600);"></div>
-			    <div class="cell" style="background: var(--color-s-600);"></div>
-			    <div class="cell" style="background: var(--color-s-600);"></div>
-			    <div class="cell" style="background: var(--color-s-600);"></div>
-			    <div class="cell" style="background: var(--color-s-600);"></div>
-			    <div class="cell" style="background: var(--color-s-600);"></div>
-			    <div class="cell" style="background: var(--color-s-600);"></div>
-			    <div class="cell" style="background: var(--color-s-600);"></div>
- 		</div>
-		<div class="result" id="result"></div>
-  		<button class="restart" id="restart">Restart</button> 
+		<h1> About us</h1>
+  
+	</section>
+
+	<section id="contact">
+		
+		<h1> COntact us</h1>
   
 	</section>
 
 
 	<footer>
+		<div class="social">
 		<a href="#"> <span class="material-icons md-36 md-light">&#xe9f5;</span> </a>
 		<a href="#"> <span class="material-icons md-36 md-light">&#xe9f6;</span>  </a>
 		<a href="#"> <span class="material-icons md-36 md-light">&#xe51c;</span>  </a>
-		<a href="#"> <span class="material-icons md-36 md-light">&#xe518;</span>  </a>
+		
 		<span class="material-symbols-outlined"> sports_esports </span>
+		</div>
 		&copy Copyright MIS Tech Trainning School
 	</footer>
 	<script type="text/javascript" src="main.js"></script>
-	<script type="text/javascript" src="game1.js"></script>
 </body>
 </html>
