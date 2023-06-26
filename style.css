@@ -343,6 +343,7 @@ section {
 footer {
   height: 10vh;
   width: 100%;
+  color: white;
   background: rgba(70, 66, 79, 0.3);
   display: flex;
   flex-direction: column;
