@@ -19,7 +19,7 @@ function toggleMode(x) {
   
   window.addEventListener("mousewheel", function () {
           let home = document.getElementById('head')
-          if (window.scrollY > 550) {
+          if (window.scrollY > 450) {
               home.style.background = "var(--color-s-m-300)"
               home.style.transition = "0.5s"
   
