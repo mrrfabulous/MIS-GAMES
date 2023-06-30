@@ -315,7 +315,7 @@ section {
     .cell {
       width: 100px;
       height: 100px;
-      background-color: #eee;
+      background-color: var(--color-p-600);
       border: 1px solid #999;
       display: flex;
       justify-content: center;
@@ -352,7 +352,16 @@ footer {
   justify-content: space-around;
 }
 
-
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  height: 90vh;
+  width: 100%;
+  padding-top: 15vh;
+  
+}
 
 
 
