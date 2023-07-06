@@ -28,6 +28,44 @@
 			<span class="material-icons md-36 md-light">&#xE5D2;</span>			
 		</button>
 		</div>
+		<style>
+	.grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    .result {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 24px;
+    }
+
+    .restart {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #eee;
+      border: none;
+      cursor: pointer;
+    }
+
+  	.cell {
+      width: 100px;
+      height: 100px;
+      background-color: var(--color-p-600);
+      border: 1px solid #999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 48px;
+      cursor: pointer;
+    }
+
+		</style>
 	</header>
 
 	<div id="game">
