@@ -45,12 +45,17 @@
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
-  'wght' 400,
+  'wght' 600,
   'GRAD' 0,
   'opsz' 48;
-  color: var(--text1);
+  color: var(--color-p-600);
   cursor: pointer;
  }
+
+
+.material-symbols-outlined:hover {
+  color: rgba(255,255,255,0.8);
+}
 
  #close-btn {
   display: none;
@@ -60,13 +65,16 @@
  #open-btn {
   display: none;
   background: none;
-  color: white;
- }
+  color: var(--color-p-600);
+  border: none;
+  transform: scale(1.5);
+  margin: 0;
+  padding: 0;
+}
 
  #open-btn:hover {
   cursor: pointer;
-  transform: scale(1.1);
-  border: none;
+  color: rgba(255,255,255,0.8);
  }
 
  #mode {
@@ -84,24 +92,26 @@
   cursor: pointer;
   border-radius: 1em;
   border-style: none;
+  color: white;
+  transition: 0.5s;
  }
 
  #start:hover {
-  transform: rotate(357deg);
-  transform: scale(1.1);
-  background: var(--color-p-400);
-  color: white;
- }
+   transform: rotate(357deg);
+   transform: scale(1.1);
+   background: var(--color-p-400);
+   color: white;
+  }
 
  #start a {
-    width: auto;
-    height: auto;
+    /*width: auto;*/
+    /*height: auto;*/
     text-decoration: none;
     color: var(--text1);
     text-align: center;
     font-weight: 700;
     font-size: 1em;
-    padding: 1em;
+    /*padding: 1em;*/
     text-transform: uppercase;
  }
 
@@ -110,43 +120,39 @@
   background: var(--color-s-m-100);
   color: var(--text1);
   transition: 1s;
- }
+
+}
 
 header {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 10vh;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 2em;
   position: fixed;  
   z-index: 1;
-  color: white;
-}
+  }
 
-header a{
-  width: 30%;
-  margin-right: 4em;
-}
 
 #logo {
-  width: 100%;
+  width: 30%;
   height: auto;
 }
 
 
 .nav-bar {
   display: flex;
-  justify-content: space-around;
-  width: 80%;
-  padding-left: 2em;  
+  margin: 1em;
+  width: 60%;
 }
 
 .nav-list {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   list-style: none;
-  width: 70%;
+  width: 100%;
 }
 
 .nav-list a {
@@ -282,14 +288,62 @@ section {
 
  #contact {
     justify-content: center;
+
+ }
+
+ #contact h1 {
+  margin: 1.5em;
+  text-transform: uppercase;
+ }
+
+ .finput {
+    background: rgba(255,255,255, 0.8);
+    border-radius: 2em;
+    height: 3em;
+    width:  20em;
+    padding: 1em;
+    border: 2px solid var(--color-p-500);
+ }
+
+ #message {
+  width: 100%;
+  background: rgba(255,255,255, 0.8);
+  border: 2px solid var(--color-p-500);
+  padding: 1em;
+  margin-top: 1em;
+ }
+
+.submitBtn {
+   width: auto;
+  height: auto;
+  padding: 1em;
+  background: var(--color-p-300);
+  cursor: pointer;
+  border-radius: 1em;
+  border-style: none;
+  color: white;
+ }
+
+ .submitBtn:hover{
+   transform: scale(1.1);
+   background: var(--color-p-400);
+   color: white;
  }
 
 #result {
   height: 50vh;
   width: 50%;
 }
+
+
+
+
+
+
+
+
 footer {
-  height: 10vh;
+  height: 7vh;
   width: 100%;
   color: white;
   background: rgba(70, 66, 79, 0.3);
@@ -297,6 +351,15 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social a img {
+  transform: scale(0.5);
+
 }
 
 #game {
@@ -358,10 +421,48 @@ footer {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 780px) {
 
   header {
     justify-content: space-between;
+    align-items: center;
     background: var(--color-s-m-300); 
   }
 
@@ -371,21 +472,20 @@ footer {
   }
 
   #logo {
-    width: 100%;
+    width: 40%;
     height: auto;
   }
     
   .nav-bar {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 30%;
     padding-left: 2em;  
   }
 
   #open-btn {
     display: block;
-    color: white;
-    background: none;
+    
   }  
   .nav-list {
     display: none;
@@ -393,13 +493,13 @@ footer {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 50%;
-    background: rgba(46, 43, 58, 0.9);
+    width: 60%;
+    background: rgba(46, 43, 58, 1);
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
+    align-items: start;
+    justify-content: space-around;
+    padding: 3rem;
+    z-index: 2;
   }
 
   #close-btn {
@@ -467,6 +567,70 @@ footer {
 
    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:580px) {
 
