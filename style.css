@@ -299,7 +299,7 @@ section {
  .finput {
     background: rgba(255,255,255, 0.8);
     border-radius: 2em;
-    height: 3em;
+    height: 2em;
     width:  20em;
     padding: 1em;
     border: 2px solid var(--color-p-500);
@@ -343,14 +343,15 @@ section {
 
 
 footer {
-  height: 7vh;
+  height: 10vh;
   width: 100%;
-  color: white;
   background: rgba(70, 66, 79, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding: 1em;
+  font-size: 1em;
 }
 
 .social a {
@@ -500,6 +501,12 @@ footer {
     justify-content: space-around;
     padding: 3rem;
     z-index: 2;
+    transition: 1s;
+  }
+
+  .active {
+    display: flex;
+    transition: 1s;
   }
 
   #close-btn {

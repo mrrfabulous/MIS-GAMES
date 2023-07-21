@@ -30,5 +30,16 @@ function toggleMode(x) {
   })
   
   
+  let toggleActive = () => {
+    nav.classList.toggle('active')
+    // nav.style.transition = "1s"
+  }
+
+  let openBtn = document.getElementById("open-btn")
+  let closeBtn = document.getElementById("close-btn")
+  let nav = document.getElementById("nav-list");
+
+  closeBtn.addEventListener('click', toggleActive)
+  openBtn.addEventListener('click', toggleActive)
   
-  
+  // nav.style.background = 'red';
